@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.AspNet.Membership.OpenAuth</name>
+  </assembly>
+  <members>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager" /> 類別的新執行個體。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.Add(System.String,System.Func{DotNetOpenAuth.AspNet.IAuthenticationClient})"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.Add(System.String,System.Func{DotNetOpenAuth.AspNet.IAuthenticationClient},System.Collections.Generic.IDictionary{System.String,System.String})"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.Add(System.String,System.Func{DotNetOpenAuth.AspNet.IAuthenticationClient},System.Object)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.GetAll"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.GetByProviderName(System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.GetDisplayName(System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager.TryGetByProviderName(System.String,DotNetOpenAuth.AspNet.IAuthenticationClient@)"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddFacebook(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddFacebook(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager,System.String,System.String,System.Object)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddGoogle(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddGoogle(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager,System.Object)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddMicrosoft(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddMicrosoft(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager,System.String,System.String,System.Object)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddTwitter(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManagerExtensions.AddTwitter(Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager,System.String,System.String,System.Object)"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.CreateResult"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.CreateResult.ErrorMessage"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.CreateResult.IsSuccessful"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase">
+      <summary>使用「Entity Framework 程式碼優先」，將成員資格使用者的關聯資料儲存至 OAuth/OpenID 提供者的實作。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase.#ctor(System.String,System.String,System.Func{System.String,System.String})"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase.AddAccount(System.String,System.String,System.String,System.String,System.Boolean)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase.DeleteAccount(System.String,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase.GetAccountsForUser(System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase.GetMembershipUserName(System.String,System.String,System.Boolean)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase.HasLocalPassword(System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.EFOpenAuthMembershipDatabase.SetHasLocalPassword(System.String,System.Boolean)"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.IMembership"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.IMembership.ApplicationName"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.IMembership.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Web.Security.MembershipCreateStatus@)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.IMembership.DeleteUser(System.Object,System.Boolean)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.IMembership.DeleteUser(System.String,System.Boolean)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.IMembership.GeneratePassword(System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.IMembership.GetUser(System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.IMembership.UpdateUser(System.Web.Security.MembershipUser)"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter">
+      <summary>封裝靜態成員資格系統 API</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.#ctor"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.ApplicationName"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Web.Security.MembershipCreateStatus@)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.DeleteUser(System.Object,System.Boolean)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.DeleteUser(System.String,System.Boolean)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.GeneratePassword(System.Int32,System.Int32)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.GetUser(System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.MembershipAdapter.UpdateUser(System.Web.Security.MembershipUser)"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.OpenAuth">
+      <summary>提供靜態方法來管理 OpenAuth 登入和 ASP.NET 應用程式中的帳戶資訊。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.AddAccountToExistingUser(System.String,System.String,System.String,System.String)">
+      <summary>將外部登入帳戶新增至現有的成員資格帳戶。</summary>
+      <param name="providerName">外部驗證提供者的名稱。</param>
+      <param name="providerUserId">含有外部驗證提供者之使用者的使用者 ID。</param>
+      <param name="providerUserName">含有外部驗證提供者之使用者的使用者名稱。</param>
+      <param name="membershipUserName">本機成員資格使用者的使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.AddLocalPassword(System.String,System.String)">
+      <summary>為指定的本機使用者新增本機密碼。</summary>
+      <param name="userName">使用者名稱。</param>
+      <param name="password">新的本機密碼。</param>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.AuthenticationClients">
+      <summary>要使用的外部驗證服務提供者。</summary>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.ConnectionString">
+      <summary>取得或設定儲存 OpenAuth 帳戶詳細資料之資料庫的連線字串名稱。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.CreateUser(System.String,System.String,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.CreateUser(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.DeleteAccount(System.String,System.String,System.String)">
+      <summary>為指定的成員資格使用者刪除指定之外部帳戶的關聯。</summary>
+      <returns>如果已成功刪除關聯，則為 true，如果找不到關聯，則為 false。</returns>
+      <param name="membershipUserName">本機成員資格使用者的使用者名稱。</param>
+      <param name="providerName">驗證提供者名稱。</param>
+      <param name="providerUserId">含有驗證提供者之使用者的使用者 ID。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.GetAccountsForUser(System.String)">
+      <summary>傳回已針對指定成員資格使用者註冊的外部帳戶詳細資料。</summary>
+      <param name="membershipUserName">本機成員資格使用者的使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.GetProviderDisplayName(System.String)">
+      <summary>取得提供者顯示名稱。</summary>
+      <param name="providerName">提供者的名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.GetProviderNameFromCurrentRequest">
+      <summary>取得已重新導向至目前要求的外部驗證提供者名稱。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.HasLocalPassword(System.String)">
+      <summary>判斷指定的使用者是否具備此網站上的本機密碼。</summary>
+      <param name="membershipUserName">本機成員資格使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.IsLocalUrl(System.String)">
+      <summary>判斷指定的 URL 對此網站而言是否為本機。</summary>
+      <param name="url">URL。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.Login(System.String,System.String,System.Boolean)">
+      <summary>使用指定的驗證提供者和提供者使用者 ID，透過 OpenAuth 來登入使用者。使用者必須已經利用此 OpenAuth 提供者向網站註冊。</summary>
+      <returns>如果使用者已成功登入，則為 true，如果登入失敗，則為 false，例如，如果使用者目前尚未註冊。</returns>
+      <param name="providerName">驗證提供者名稱。</param>
+      <param name="providerUserId">含有驗證提供者之使用者的使用者 ID。</param>
+      <param name="createPersistentCookie">表示建立的登入 Cookie 是否應為永久性的旗標。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.RequestAuthentication(System.String,System.String)">
+      <summary>從提供者要求驗證，此提供者是藉由將使用者重新導向至服務的登入頁面所指定。</summary>
+      <param name="providerName">驗證提供者的名稱。</param>
+      <param name="returnUrl">要傳回的本機 URL。</param>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.UsersAccountsTableName">
+      <summary>取得或設定儲存 OpenAuth 外部帳戶詳細資料的資料庫資料表名稱。</summary>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.UsersDataTableName">
+      <summary>取得或設定儲存 OpenAuth 使用者詳細資料的資料庫資料表名稱。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuth.VerifyAuthentication(System.String)">
+      <summary>確認目前要求上的提供者結果。</summary>
+      <param name="returnUrl">要傳遞至外部驗證提供者的傳回 URL。這必須與已傳遞至 RequestAuthentication 呼叫的傳回 URL 相符。</param>
+    </member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData.#ctor(System.String,System.String,System.String,System.String,System.Nullable{System.DateTime})">
+      <summary>初始化 <see cref="T:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData" /> 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData.LastUsedUtc"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData.ProviderDisplayName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData.ProviderName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData.ProviderUserId"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData.ProviderUserName"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager">
+      <summary>提供方法來管理 OpenAuth 登入和 ASP.NET 應用程式中的帳戶資訊。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.#ctor(Microsoft.AspNet.Membership.OpenAuth.IMembership,Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase,Microsoft.AspNet.Membership.OpenAuth.AuthenticationClientManager)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.AddAccountToExistingUser(System.String,System.String,System.String,System.String)">
+      <summary>將外部登入帳戶新增至現有的成員資格帳戶。</summary>
+      <param name="providerName">外部驗證提供者的名稱。</param>
+      <param name="providerUserId">含有外部驗證提供者之使用者的使用者 ID。</param>
+      <param name="providerUserName">含有外部驗證提供者之使用者的使用者名稱。</param>
+      <param name="membershipUserName">本機成員資格使用者的使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.AddLocalPassword(System.String,System.String)">
+      <summary>為指定的本機使用者新增本機密碼。</summary>
+      <param name="userName">使用者名稱。</param>
+      <param name="password">新的本機密碼。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.CreateRandomPassword">
+      <summary>建立要在建立新的本機成員資格使用者時使用的隨機密碼。根據預設，此方法只會呼叫至 Membership.GeneratePassword 方法。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.CreateUser(System.String,System.String,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.CreateUser(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.DeleteAccount(System.String,System.String,System.String)">
+      <summary>為指定的成員資格使用者刪除指定之外部帳戶的關聯。</summary>
+      <returns>如果已成功刪除關聯，則為 true，如果找不到關聯，則為 false。</returns>
+      <param name="membershipUserName">本機成員資格使用者的使用者名稱。</param>
+      <param name="providerName">驗證提供者名稱。</param>
+      <param name="providerUserId">含有驗證提供者之使用者的使用者 ID。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.GetAccountsForUser(System.String)">
+      <summary>傳回已針對指定成員資格使用者註冊的外部帳戶詳細資料。</summary>
+      <param name="membershipUserName">本機成員資格使用者的使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.GetProviderDisplayName(System.String)">
+      <summary>取得提供者顯示名稱。</summary>
+      <param name="providerName">提供者的名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.GetProviderName(System.Web.HttpContextBase)">
+      <summary>取得已重新導向至指定要求的外部驗證提供者名稱。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.HasLocalPassword(System.String)">
+      <summary>判斷指定的成員資格使用者是否具備此網站上的本機密碼。</summary>
+      <param name="membershipUserName">本機成員資格使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.IsLocalUrl(System.String)">
+      <summary>判斷指定的 URL 對此網站而言是否為本機</summary>
+      <param name="url">URL</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.Login(System.Web.HttpContextBase,System.String,System.String,System.Boolean)">
+      <summary>使用指定的驗證提供者和提供者使用者 ID，透過 OpenAuth 來登入使用者。使用者必須已經利用此 OpenAuth 提供者向網站註冊。</summary>
+      <returns>如果使用者已成功登入，則為 true，如果登入失敗，則為 false，例如，如果使用者目前尚未註冊。</returns>
+      <param name="providerName">驗證提供者名稱。</param>
+      <param name="providerUserId">含有驗證提供者之使用者的使用者 ID。</param>
+      <param name="createPersistentCookie">表示建立的登入 Cookie 是否應為永久性的旗標。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.RequestAuthentication(System.Web.HttpContextBase,System.String,System.String)">
+      <summary>從提供者要求驗證，此提供者是藉由將使用者重新導向至服務的登入頁面所指定。</summary>
+      <param name="context">目前的 HTTP 內容。</param>
+      <param name="providerName">驗證提供者的名稱。</param>
+      <param name="returnUrl">要傳回的本機 URL。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthManager.VerifyAuthentication(System.Web.HttpContextBase,System.String)">
+      <summary>確認目前要求上的提供者結果。</summary>
+      <param name="context">目前的 HTTP 內容。</param>
+      <param name="returnUrl">要傳遞至外部驗證提供者的傳回 URL。這必須與已傳遞至 RequestAuthentication 呼叫的傳回 URL 相符。</param>
+    </member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase">
+      <summary>代表將成員資格使用者的關聯資料儲存至 OAuth/OpenID 提供者的資料庫。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.#ctor(System.String)">
+      <summary>建立執行個體。</summary>
+      <param name="applicationName">成員資格應用程式名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.AddAccount(System.String,System.String,System.String,System.String,System.Boolean)">
+      <summary>新增將 OAuth/OpenID 帳戶關聯至成員資格使用者的記錄。</summary>
+      <param name="providerName">OAuth/OpenID 提供者的名稱。</param>
+      <param name="providerUserId">OAuth/OpenID 使用者 ID。</param>
+      <param name="providerUserName">OAuth/OpenID 使用者名稱。</param>
+      <param name="membershipUserName">成員資格使用者的使用者名稱。</param>
+      <param name="isNewMembershipUser">表示此帳戶關聯是否適用於新成員資格使用者的旗標。</param>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.ApplicationName">
+      <summary>成員資格應用程式名稱。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.DeleteAccount(System.String,System.String,System.String)">
+      <summary>為指定的成員資格使用者刪除 OAuth/OpenID 帳戶的關聯記錄。</summary>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.GetAccountsForUser(System.String)">
+      <summary>傳回已針對指定成員資格使用者註冊的 OAuth/OpenID 提供者詳細資料。</summary>
+      <param name="membershipUserName">成員資格使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.GetMembershipUserName(System.String,System.String,System.Boolean)">
+      <summary>取得目前與指定 OAuth/OpenID 提供者相關聯之成員資格使用者的使用者名稱。</summary>
+      <param name="providerName">OAuth/OpenID 提供者的名稱。</param>
+      <param name="providerUserId">OAuth/OpenID 使用者 ID。</param>
+      <param name="updateLastUsed">表示是否要更新上次使用之欄位的旗標。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.HasLocalPassword(System.String)">
+      <summary>傳回旗標，這個旗標表示指定的成員資格使用者是否已設定本機密碼。</summary>
+      <param name="membershipUserName">成員資格使用者的使用者名稱。</param>
+    </member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.OpenAuthMembershipDatabase.SetHasLocalPassword(System.String,System.Boolean)">
+      <summary>設定旗標，這個旗標表示指定的成員資格使用者是否已設定本機密碼。</summary>
+      <param name="membershipUserName">成員資格使用者的使用者名稱。</param>
+      <param name="value">旗標值。</param>
+    </member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.ProviderDetails"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.ProviderDetails.DataBag"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.ProviderDetails.ExtraData"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.ProviderDetails.ProviderDisplayName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.ProviderDetails.ProviderName"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.SetPasswordResult"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.SetPasswordResult.ErrorMessage"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.SetPasswordResult.IsSuccessful"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount" /> 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.ApplicationName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.LastUsedUtc"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.MembershipUserName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.ProviderName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.ProviderUserId"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.ProviderUserName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthAccount.UserData"></member>
+    <member name="T:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthUserData"></member>
+    <member name="M:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthUserData.#ctor">
+      <summary>初始化 <see cref="T:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthUserData" /> 類別的新執行個體。</summary>
+    </member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthUserData.Accounts"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthUserData.ApplicationName"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthUserData.HasLocalPassword"></member>
+    <member name="P:Microsoft.AspNet.Membership.OpenAuth.Data.OpenAuthUserData.MembershipUserName"></member>
+  </members>
+</doc>
